@@ -22,3 +22,17 @@ void promedio(float arr[10], float &suma, float &prom){
     prom = suma / 10;
 } 
 
+void max(float arr[10], int &cond, float &maximo){
+    /*Funcion de calculo de màxima distancia recorrida
+    y el conductor que la recorre
+    arr[10], int, float -> float,int
+    */
+    maximo = arr[0];
+    cond = 1;
+    for (int i = 1; i < 10; i++) {
+        if (arr[i] > maximo) {
+            maximo = arr[i];
+            cond = i + 1;
+        }
+    }
+}
