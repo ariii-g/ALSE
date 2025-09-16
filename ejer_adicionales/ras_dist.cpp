@@ -11,3 +11,14 @@ for (int i = 0; i < 10; i++) {
     std:: cin >> arr[i];
     }
 }
+void promedio(float arr[10], float &suma, float &prom){
+    /*Funcion de calculo de suma y promedio de distancia
+    arr[10], float, float -> float, float
+    */
+    suma = 0;
+    for (int i = 0; i < 10; i++) {
+        suma += arr[i];
+    }
+    prom = suma / 10;
+} 
+
