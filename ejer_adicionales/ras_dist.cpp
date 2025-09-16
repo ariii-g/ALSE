@@ -36,3 +36,18 @@ void max(float arr[10], int &cond, float &maximo){
         }
     }
 }
+
+int main() {
+    float arr[10];
+    float suma,prom, maximo;
+    int cond;
+
+    datos(arr);
+    promedio(arr,suma,prom);
+    max(arr,cond,maximo);
+    std:: cout << "--------------------" << std::endl;
+    std:: cout << "El promedio de las distancias recorridas es de: " << prom << " km" << std::endl;
+    std:: cout << "El conductor " << cond << " recorrio la maxima distancia con: "  << maximo << " km" << std::endl;
+    std:: cout << "La distancia total recorrida por todos los conductores es de: " << suma << " km" << std::endl;
+    return 0;
+}
